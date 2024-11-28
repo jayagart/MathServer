@@ -37,8 +37,8 @@ Publish the website in the given URL.
 <head>
 <style>
 
-.edge
- { display: ruby-base;
+.edge{
+ display: ruby-base;
     margin-top: 400px;
     margin-bottom: auto;
     margin-left: auto;
@@ -51,28 +51,21 @@ Publish the website in the given URL.
     padding-bottom: 65px;
     padding-left: 80px;
     width: 40%;
-    flex-direction: column;
-    
+    flex-direction: column;  
   }
   body{
     background-color: grey;
   }
-div.formelt
-{
+div.formelt{
     font-size: 150%;
-   color: black;
-  
-    
+   color: black;   
 }
-div.box
-{
+div.box{
   color:rgb(13, 202, 226);
   text-align: center;
-  font-style: inherit;
-  
+  font-style: inherit;  
 }
-input
-{
+input{
   padding: 10px;
   border: 3px solid;
   border-radius: 3px;
@@ -82,34 +75,34 @@ input
 </style>
 </head>
 <body>
-    <div class="edge">
-        <div class="box">
-            <h1>POWER OF A FILAMENT</h1>
-            <form method="POST">
-                {% csrf_token %}
-            </div>
-            <h1 align="center"> Jayagar.T (24901219)</h1>
-                <div class="formelt">
-                    <br>
-                     intensity<input type="text" name="intensity" value="{{i}}" ></input>(W/m <sup> 2 </sup>) <br>
-                </div>
-                <div class="formelt">
-                    <br>
-                    resistance <input type="text" name="resistance" value="{{r}}"></input>(ohm)<br>
+<div class="edge">
+<div class="box">
+ <h1>POWER OF A FILAMENT</h1>
+<form method="POST">
+{% csrf_token %}
+</div>
+<h1 align="center"> Jayagar.T (24901219)</h1>
+<div class="formelt">
+<br>
+intensity<input type="text" name="intensity" value="{{i}}" ></input>(W/m <sup> 2 </sup>) <br>
+</div>
+<div class="formelt">
+<br>
+resistance <input type="text" name="resistance" value="{{r}}"></input>(ohm)<br>
 
-                </div>
+</div>
                 
-                <div  class="formelt">
-                    <br>
-                    <input type="submit" value="calculate"></input><br>
-                </div>
-                <div class="formelt">
-                    <br>
-                power <input type="text" name="Power" value="{{power}}"></input>(w)<br>
-                </div>
+<div  class="formelt">
+<br>
+<input type="submit" value="calculate"></input><br>
+</div>
+<div class="formelt">
+<br>
+power <input type="text" name="Power" value="{{power}}"></input>(w)<br>
+</div>
  
-            </form>
-    </div>
+</form>
+</div>
 </body>
 
 </html>
