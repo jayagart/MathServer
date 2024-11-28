@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+
+.edge
+ { display: block;
+    margin-top: 400px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dotted;
+    border-color: greenyellow;
+   background-color: blue;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    width: 25%;
+    flex-direction: column;
+    
+  }
+  body{
+    background-color: blueviolet;
+  }
+div.formelt
+{
+    font-size: 150%;
+   color: orange;
+  
+    
+}
+div.box
+{
+  color: cyan;
+  text-align: center;
+  font-style: unset;
+  
+}
+input
+{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  width: 50%;
+  align-items: center;
+}
+</style>
+</head>
+<body>
+    <div class="edge">
+        <div class="box">
+            <h1>POWER OF A LAMP FILAMENT</h1>
+            <form method="POST">
+                {% csrf_token %}
+            </div>
+            <h2>Jayagar.T (24901219)</h2>
+                <div class="formelt">
+                    <br>
+                    Intensity : <input type="text" name="Intensity" value="{{I}}"></input>(in W/m <sup> 2 </sup>) <br>
+                </div>
+                <div class="formelt">
+                    <br>
+                    Resistance : <input type="text" name="Resistance" value="{{R}}"></input>(in ohm)<br>
+
+                </div>
+                
+                <div  class="formelt">
+                    <br>
+                    <input type="submit" value="calculate"></input><br>
+                </div>
+                <div class="formelt">
+                    <br>
+                power : <input type="text" name="power" value="{{power}}"></input>(in watt)<br>
+                </div>
+ 
+            </form>
+    </div>
+</body>
+
+</html>
