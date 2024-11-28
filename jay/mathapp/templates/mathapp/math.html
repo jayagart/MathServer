@@ -3,45 +3,45 @@
 <style>
 
 .edge
- { display: block;
+ { display: ruby-base;
     margin-top: 400px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     border-style: dotted;
-    border-color: greenyellow;
-   background-color: blue;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    border-color: black;
+   background-color: greenyellow;
+    padding-top: 65px;
+    padding-right: 80px;
+    padding-bottom: 65px;
     padding-left: 80px;
-    width: 25%;
+    width: 40%;
     flex-direction: column;
     
   }
   body{
-    background-color: blueviolet;
+    background-color: grey;
   }
 div.formelt
 {
     font-size: 150%;
-   color: orange;
+   color: black;
   
     
 }
 div.box
 {
-  color: cyan;
+  color:rgb(13, 202, 226);
   text-align: center;
-  font-style: unset;
+  font-style: inherit;
   
 }
 input
 {
   padding: 10px;
-  border: 1px solid;
+  border: 3px solid;
   border-radius: 3px;
-  width: 50%;
+  width: 100%;
   align-items: center;
 }
 </style>
@@ -49,18 +49,18 @@ input
 <body>
     <div class="edge">
         <div class="box">
-            <h1>POWER OF A LAMP FILAMENT</h1>
+            <h1>POWER OF A FILAMENT</h1>
             <form method="POST">
                 {% csrf_token %}
             </div>
-            <h2>Jayagar.T (24901219)</h2>
+            <h1 align="center"> Jayagar.T (24901219)</h1>
                 <div class="formelt">
                     <br>
-                    Intensity : <input type="text" name="Intensity" value="{{I}}"></input>(in W/m <sup> 2 </sup>) <br>
+                     intensity<input type="text" name="Intensity" value="{{I}}" ></input>(W/m <sup> 2 </sup>) <br>
                 </div>
                 <div class="formelt">
                     <br>
-                    Resistance : <input type="text" name="Resistance" value="{{R}}"></input>(in ohm)<br>
+                    resistance <input type="text" name="Resistance" value="{{R}}"></input>(ohm)<br>
 
                 </div>
                 
@@ -70,7 +70,7 @@ input
                 </div>
                 <div class="formelt">
                     <br>
-                power : <input type="text" name="power" value="{{power}}"></input>(in watt)<br>
+                power <input type="text" name="power" value="{{power}}"></input>(w)<br>
                 </div>
  
             </form>
